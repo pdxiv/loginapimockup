@@ -64,7 +64,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./loginapimockup-arm64-darwin
+          asset_path: ./loginapimockup-arm64-darwin/loginapimockup-arm64-darwin
           asset_name: loginapimockup-arm64-darwin
           asset_content_type: application/octet-stream
 
@@ -74,7 +74,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./loginapimockup-amd64-darwin
+          asset_path: ./loginapimockup-amd64-darwin/loginapimockup-amd64-darwin
           asset_name: loginapimockup-amd64-darwin
           asset_content_type: application/octet-stream
 
@@ -84,6 +84,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./loginapimockup-arm-linux
+          asset_path: ./loginapimockup-arm-linux/loginapimockup-arm-linux
           asset_name: loginapimockup-arm-linux
           asset_content_type: application/octet-stream
